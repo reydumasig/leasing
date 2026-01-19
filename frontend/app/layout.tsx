@@ -1,9 +1,10 @@
 import type { Metadata } from 'next'
 import './globals.css'
+import Layout from '../components/Layout'
 
 export const metadata: Metadata = {
-  title: 'MLMS - Mall Leasing Management System',
-  description: 'Mall Leasing Management System - Philippines Edition',
+  title: 'MLMS Demo',
+  description: 'Mall Leasing Management System - Demo UI',
 }
 
 export default function RootLayout({
@@ -13,7 +14,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body>{children}</body>
+      <body>
+        <Layout>{children}</Layout>
+      </body>
     </html>
   )
 }
